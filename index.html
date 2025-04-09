@@ -1,0 +1,164 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Claricia Eventus</title>
+  <link rel="stylesheet" href="static/claricia.css" />
+  <link rel="icon" type="image/x-icon" href="static/images_other/claricia.ico">
+</head>
+<body>
+  <header>
+    <nav role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="#">CLARICIA EVENTUS</a></li>
+        <li><a href="#gallery">GALERIA</a></li>
+        <li><a href="#info">ATENDIMENTO &amp; INFOS</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="hero">
+    <div class="hero-content">
+      <!-- Removed redundant background-image here; the content now focuses on the logo image -->
+      <img class="hero-logo" src="static/images_other/claricia_logo.svg" alt="Logo da Claricia Eventus" />
+    </div>
+  </section>
+  
+  <main>  
+    <section class="intro">
+      <div class="intro-content">
+        <p>Descubra um espaço único, concebido para elevar cada celebração a um novo patamar. Seja para casamentos, festas de aniversário, batizados ou eventos corporativos, a Claricia Eventus combina sofisticação e charme português para criar uma atmosfera acolhedora e envolvente. Aqui, cada detalhe é cuidadosamente planejado para que seu evento se destaque desde o primeiro instante.</p><br>
+        <p>Imagine um ambiente moderno e versátil, onde o design contemporâneo se alia à tradição, proporcionando elegância e conforto. Nossa infraestrutura de ponta é pensada para oferecer experiências memoráveis, convidando você a viver momentos de pura alegria e exclusividade. Transforme seu sonho em realidade em um espaço que une inovação e um toque de tradição, ideal para celebrar os marcos mais especiais da sua vida.</p><br>
+        <p>Na Claricia Eventus, cuidamos de tudo para que você possa se concentrar no que realmente importa: aproveitar cada instante e criar memórias que durarão para sempre. Venha viver o extraordinário e faça do seu evento uma história única, onde a excelência e a emoção caminham lado a lado.</p>
+      </div>
+    </section>
+    
+    <section class="gallery">
+  <h1 id="gallery">Galeria</h1>
+  <div class="gallery-content">
+	<div class="img-container">
+		<img class="gallery-photo" src="static/imagens_eventos/YES.JPG" alt="Foto da galeria 1" data-category="eventos"/>
+		<span class="img-label" onclick="openModal(0)">Eventos</span>
+	</div>
+	<div class="img-container">
+		<img class="gallery-photo" src="static/imagens_espaco/YES.JPG" alt="Foto da galeria 2" data-category="espaco" />
+		<span class="img-label" onclick="openModal(1)">Espaço</span>
+	</div>
+	<div class="img-container">
+		<img class="gallery-photo" src="static/imagens_detalhes/YES.JPG" alt="Foto da galeria 3" data-category="detalhes" />
+		<span class="img-label" onclick="openModal(2)">Detalhes</span>
+	</div>
+    <!-- Hidden images belonging to the 'eventos' category -->
+    <img style="display:none;" class="gallery-photo" src="static/imagens_eventos/YES2.JPG" alt="Foto da galeria" onclick="openModal(3)" data-category="eventos" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_eventos/YES3.JPG" alt="Foto da galeria" onclick="openModal(4)" data-category="eventos" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_eventos/YES4.JPG" alt="Foto da galeria" onclick="openModal(5)" data-category="eventos" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_eventos/YES5.JPG" alt="Foto da galeria" onclick="openModal(6)" data-category="eventos" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_eventos/YES6.JPG" alt="Foto da galeria" onclick="openModal(7)" data-category="eventos" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_eventos/YES7.JPG" alt="Foto da galeria" onclick="openModal(8)" data-category="eventos" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_eventos/YES8.JPG" alt="Foto da galeria" onclick="openModal(9)" data-category="eventos" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_eventos/YES9.JPG" alt="Foto da galeria" onclick="openModal(10)" data-category="eventos" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_eventos/YES10.JPG" alt="Foto da galeria" onclick="openModal(11)" data-category="eventos" />
+    <!-- Hidden images belonging to the 'espaco' category -->
+    <img style="display:none;" class="gallery-photo" src="static/imagens_espaco/YES2.JPG" alt="Foto da galeria" onclick="openModal(12)" data-category="espaco" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_espaco/YES3.JPG" alt="Foto da galeria" onclick="openModal(13)" data-category="espaco" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_espaco/YES4.JPG" alt="Foto da galeria" onclick="openModal(14)" data-category="espaco" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_espaco/YES5.JPG" alt="Foto da galeria" onclick="openModal(15)" data-category="espaco" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_espaco/YES6.JPG" alt="Foto da galeria" onclick="openModal(16)" data-category="espaco" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_espaco/YES7.JPG" alt="Foto da galeria" onclick="openModal(17)" data-category="espaco" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_espaco/YES8.JPG" alt="Foto da galeria" onclick="openModal(18)" data-category="espaco" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_espaco/YES9.JPG" alt="Foto da galeria" onclick="openModal(19)" data-category="espaco" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_espaco/YES10.JPG" alt="Foto da galeria" onclick="openModal(20)" data-category="espaco" />
+    <!-- Hidden images belonging to the 'detalhes' category -->
+    <img style="display:none;" class="gallery-photo" src="static/imagens_detalhes/YES2.JPG" alt="Foto da galeria" onclick="openModal(21)" data-category="detalhes" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_detalhes/YES3.JPG" alt="Foto da galeria" onclick="openModal(22)" data-category="detalhes" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_detalhes/YES4.JPG" alt="Foto da galeria" onclick="openModal(23)" data-category="detalhes" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_detalhes/YES5.JPG" alt="Foto da galeria" onclick="openModal(24)" data-category="detalhes" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_detalhes/YES6.JPG" alt="Foto da galeria" onclick="openModal(25)" data-category="detalhes" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_detalhes/YES7.JPG" alt="Foto da galeria" onclick="openModal(26)" data-category="detalhes" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_detalhes/YES8.JPG" alt="Foto da galeria" onclick="openModal(27)" data-category="detalhes" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_detalhes/YES9.JPG" alt="Foto da galeria" onclick="openModal(28)" data-category="detalhes" />
+    <img style="display:none;" class="gallery-photo" src="static/imagens_detalhes/YES10.JPG" alt="Foto da galeria" onclick="openModal(29)" data-category="detalhes" />
+  </div>
+</section>
+    
+    <section class="info">
+      <h1 id="info">Atendimento &amp; Info</h1>
+      <div class="info-content">
+        <div class="contacts-content">
+          <h3>Entre em contacto connosco!</h3>
+          <p>R. de Santo Isidro 12, 4730-430 Sabariz, Portugal</p>
+          <p>+351 936869689</p>
+          <p>clariciaeventus@gmail.com</p>
+          <a href="https://www.facebook.com/claricia.eventus.catering">
+            <img class="icon-link" src="static/images_other/icon-facebook.png" alt="Claricia Facebook">
+          </a>
+          <a href="https://www.instagram.com/clariciaeventus/">
+            <img class="icon-link" src="static/images_other/icon-instagram.png" alt="Claricia Instagram">
+          </a>
+        </div>
+        <div class="map-content">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d313.371473753394!2d-8.411396200904603!3d41.64907202273036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2501b50fd4507f%3A0x50edb021a265f015!2sClaricia%20Eventus!5e0!3m2!1spt-PT!2sch!4v1744098466479!5m2!1spt-PT!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Lightbox Modal for Slideshow -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <img id="modal-image" src="" alt="Slide">
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 Claricia Eventus. Todos os direitos reservados.</p>
+  </footer>
+  
+  
+  <script>
+  // Gather all gallery images into an array
+  const galleryImages = Array.from(document.getElementsByClassName("gallery-photo"));
+  let currentSlideshow = [];
+  let currentSlideIndex = 0;
+  
+  function openModal(index) {
+    // Get the clicked image and its category
+    const clickedImage = galleryImages[index];
+    const category = clickedImage.dataset.category;
+    
+    // Filter images that share the same category
+    currentSlideshow = galleryImages.filter(img => img.dataset.category === category);
+    
+    // Set currentSlideIndex to the index of the clicked image within the filtered array
+    currentSlideIndex = currentSlideshow.findIndex(img => img.src === clickedImage.src);
+    
+    // Open the modal
+    document.getElementById("modal").style.display = "flex";
+    showSlide(currentSlideIndex);
+  }
+  
+  function closeModal() {
+    document.getElementById("modal").style.display = "none";
+  }
+  
+  function changeSlide(n) {
+    currentSlideIndex += n;
+    if (currentSlideIndex >= currentSlideshow.length) {
+      currentSlideIndex = 0;
+    } else if (currentSlideIndex < 0) {
+      currentSlideIndex = currentSlideshow.length - 1;
+    }
+    showSlide(currentSlideIndex);
+  }
+  
+  function showSlide(index) {
+    const src = currentSlideshow[index].src;
+    document.getElementById("modal-image").src = src;
+  }
+</script>
+</body>
+</html>
