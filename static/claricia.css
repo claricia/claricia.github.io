@@ -283,13 +283,13 @@ footer {
 img.hero-logo {
     width: 100%;
 }
-  nav li {
-    padding: 0px; /* Smaller nav item padding */
-  }
   nav li a {
     text-decoration: none;
     color: #333;
     padding: 0px;
+}
+nav ul {
+  padding-left: 0px;
 }
 }
 
