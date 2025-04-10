@@ -284,7 +284,12 @@ img.hero-logo {
     width: 100%;
 }
   nav li {
-    padding: 0.8rem 0.8rem; /* Smaller nav item padding */
+    padding: 0px; /* Smaller nav item padding */
   }
+  nav li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0px;
+}
 }
 
