@@ -4,6 +4,10 @@
   --base-font-size: 18px; /* Base font size */
 }
 
+html {
+  -webkit-text-size-adjust: 100%; /* Prevent iOS from resizing text automatically */
+}
+
 /* Global Reset */
 * {
   margin: 0;
@@ -266,3 +270,18 @@ footer {
 	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
  }
 }
+
+@media (max-width: 600px) {
+  :root {
+    --base-font-size: 16px; /* Adjust font size for smaller screens */
+  }
+  
+  .intro-content, .contacts-content, .map-content {
+    padding: 1rem; /* Reduce padding for small screens */
+  }
+  
+  nav li {
+    padding: 0.8rem 0.8rem; /* Smaller nav item padding */
+  }
+}
+
