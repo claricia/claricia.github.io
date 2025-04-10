@@ -65,6 +65,9 @@ img.gallery-photo {
     object-fit: cover;
 }
 /* Hero Section */
+img.hero-logo {
+    width: 100%;
+}
 .hero-content {
   text-align: center;
   padding-top:5rem;
